@@ -1,0 +1,199 @@
+/* Import Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Login Page Styles */
+.login-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.login-container .card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.login-container .card-header {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+}
+
+/* Navigation Styles */
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* Card Enhancements */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard Stats Cards */
+.bg-primary {
+  background: linear-gradient(45deg, #007bff, #0056b3) !important;
+}
+
+.bg-success {
+  background: linear-gradient(45deg, #28a745, #1e7e34) !important;
+}
+
+.bg-warning {
+  background: linear-gradient(45deg, #ffc107, #e0a800) !important;
+}
+
+.bg-info {
+  background: linear-gradient(45deg, #17a2b8, #138496) !important;
+}
+
+.bg-secondary {
+  background: linear-gradient(45deg, #6c757d, #545b62) !important;
+}
+
+/* Table Styles */
+.table {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table thead th {
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.table tbody tr {
+  transition: background-color 0.2s;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(0, 123, 255, 0.05);
+}
+
+/* Stock Status Colors */
+.table-warning {
+  background-color: rgba(255, 193, 7, 0.1) !important;
+}
+
+.table-danger {
+  background-color: rgba(220, 53, 69, 0.1) !important;
+}
+
+/* Button Enhancements */
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-group .btn {
+  transform: none;
+}
+
+.btn-group .btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Alert Styles */
+.alert {
+  border: none;
+  border-radius: 10px;
+}
+
+/* Badge Styles */
+.badge {
+  font-size: 0.75em;
+  padding: 0.5em 0.75em;
+}
+
+/* Form Styles */
+.form-control, .form-select {
+  border-radius: 6px;
+  border: 2px solid #e9ecef;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Loading Spinner */
+.spinner-border {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+  
+  .lead {
+    font-size: 1rem;
+  }
+  
+  .btn-group {
+    flex-direction: column;
+  }
+  
+  .btn-group .btn {
+    margin-bottom: 0.25rem;
+  }
+}
+
+/* Utility Classes */
+.shadow-sm {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
