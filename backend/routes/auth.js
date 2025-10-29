@@ -40,7 +40,7 @@ router.post('/login', async (req, res) => {
     // Generate JWT token
     const token = jwt.sign(
       { email: ADMIN_EMAIL, role: 'admin' },
-      process.env.JWT_SECRET || 'your-secret-key',
+      process.env.JWT_SECRET || 'G7&kP9!mR2zVq#yX4tWuZ8LpJhSd0BnQ',
       { expiresIn: '24h' }
     );
 
@@ -75,7 +75,7 @@ const verifyToken = (req, res, next) => {
   }
 
   try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'your-secret-key');
+    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'G7&kP9!mR2zVq#yX4tWuZ8LpJhSd0BnQ');
     req.user = decoded;
     next();
   } catch (error) {
