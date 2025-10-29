@@ -126,7 +126,7 @@ const AllBooks = () => {
                 All Books
               </h1>
               <p className="lead text-muted">
-                Manage your book inventory ({filteredBooks.length} of {books.length} books)
+                Manage your personal book inventory ({filteredBooks.length} of {books.length} books)
               </p>
             </div>
             <Button as={Link} to="/books/add" variant="primary" size="lg">
