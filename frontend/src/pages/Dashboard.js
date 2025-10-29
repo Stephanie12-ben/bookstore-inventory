@@ -61,7 +61,7 @@ const Dashboard = () => {
             <i className="fas fa-tachometer-alt me-3"></i>
             Dashboard
           </h1>
-          <p className="lead text-muted">Welcome to your bookstore inventory overview</p>
+          <p className="lead text-muted">Welcome to your bookstore inventory status</p>
         </Col>
       </Row>
 
